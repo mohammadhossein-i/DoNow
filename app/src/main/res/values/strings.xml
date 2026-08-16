@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DoNow</string>
+    <string name="emo_message">Do it now!!</string>
+
+    <string name="today_group_title">Today</string>
+    <string name="all_group_title">All Tasks</string>
+    <string name="done_group_title">Finished</string>
+
+    <string name="open_tasks">Open Tasks</string>
+    <string name="finished_tasks">Finished Tasks</string>'
+
+    <string name="add_task_title_field">Task Title</string>
+    <string name="delete_task_btn_text">Delete</string>
+    <string name="add_task_btn_text">Add Task</string>
+    <string name="edit_task_btn_text">Save</string>
+
+    <string name="date_picker_ok">OK</string>
+    <string name="date_picker_cancel">Cancel</string>
+</resources>
