@@ -16,4 +16,6 @@
 
     <string name="date_picker_ok">OK</string>
     <string name="date_picker_cancel">Cancel</string>
+
+    <string name="today_task_time_title">Today</string>
 </resources>

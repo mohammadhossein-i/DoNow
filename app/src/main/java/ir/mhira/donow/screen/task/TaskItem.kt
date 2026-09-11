@@ -23,12 +23,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ir.mhira.donow.model.TaskModel
 import ir.mhira.donow.data.database.DBManager
+import ir.mhira.donow.utility.getTaskTimeText
 import ir.mhira.donow.utility.longToDateShortForm
 
 
@@ -101,7 +103,7 @@ fun TaskItem(task: TaskModel, onTaskClick: (Int)-> Unit) {
                 )
                 Text(
                     modifier = Modifier.padding(end = 8.dp),
-                    text = longToDateShortForm(task.date), overflow = TextOverflow.Ellipsis,
+                    text = getTaskTimeText(task.date, LocalContext.current), overflow = TextOverflow.Ellipsis,
                     style = MaterialTheme.typography.bodySmall.copy(
                         fontSize = 10.sp
                     ),
